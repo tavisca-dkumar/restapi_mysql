@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0">
+  </head> 
+  <script type="text/javascript" src="myscript1.js"> </script>
+  <body>
+    <div class="grid-container">
+      <div class="item1" style="background-color: #111214;font-style: bold ;color:#dfe3ee">TO-DO-LIST</div>
+      <div class="item2" style="background-color: #dfe3ee">
+        <ul>
+          <li><input type="button" class="button" value="to-do" onclick="toDoTable()"></li><br>
+          <li><input type="button" class="button" value="login" onclick="login()"></li><br>
+          <li><input type="button" class="button" value="user" onclick="user()"></li>
+        </ul>
+      </div>
+      <div class="item3" id="main" style="background-color: #dfe3ee">
+        <input type="text" class="search" list="datalist" id ="search" onkeyup="autoSuggestion(this.value)">
+        <datalist id="datalist"></datalist>
+        <input type="button" class="add" id="add" value ="add" onclick="addToDo()">
+        <table id="toDoTable">
+          <tr>
+            <th>todoId</th>
+            <th>DATE</th>
+            <th>TO_DO</th>
+            <th>ACTIONS</th>
+          </tr>
+        </table>
+       <!-- <img src="to-do-list.jpg" alt="djakdj" width="200px" height="300px">-->
+      </div>  
+      <div class="item4" style="background-color: #dfe3ee;color:#dfe3ee">footer</div>
+    </div>
+
+  </body>
+</html>

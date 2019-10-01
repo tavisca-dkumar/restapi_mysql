@@ -1,0 +1,122 @@
+
+ *{
+    margin:0px;
+    box-sizing: border-box;
+  }
+  .item1 { grid-area: header;
+
+  }
+  .item2 { 
+    grid-area: menu;
+   
+     }
+  .item3 { 
+    grid-area: main; 
+    
+  }
+  .item4 {
+    grid-area: footer;
+    overflow: hidden;
+
+  }
+  main.item3
+  {
+    overflow-y:scroll;
+  }
+#main{
+  overflow: auto;
+}
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'menu main'
+      'footer footer';
+    grid-gap: 1px;
+    padding: 0px;
+    grid-template-rows: 100px 455px 100px;
+    grid-template-columns: 20% 80%;
+  }
+
+  .grid-container  div {
+    background-color: #827F7A;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .button{
+    padding:10px 50px;
+    display:block;
+    background-color: #dfe3ee;
+    box-shadow: 1px 1px 1px 1px black;
+    border: none;
+    font-size: large;
+  }
+  .add{
+    padding:10px 50px;
+    background-color: #827F7A;
+    color: white;
+    box-shadow: none;
+    border: none;
+    font-size: large;
+  }
+  .button:hover{
+    background-color: #111214;
+    color: #dfe3ee;
+  }
+  ul{
+    list-style-type: none;
+    padding-top: 50px;
+  }
+  .search{
+    width: 300px;
+    height:44px;
+  }
+  table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+   }
+   table,th,td{
+    border:1px solid black; 
+   }
+   .editButton{
+    color: white;
+    background-color: green;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin: 10px 20px;
+  }
+    .deleteButton{
+    color: white;
+    background-color: red;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin: 10px 20px;
+   }
+   .login{
+    margin-top: 30px;
+    background-color:#dfe3ee; 
+   }
+   .uname{
+    width: 300px;
+    height:30px;
+   }
+   .name{
+    width: 300px;
+    height:30px;
+    padding-left: 5px;
+   }
+   .loginButton{
+      padding: 10px 50px;
+   }
+   .updatetextbox{
+    padding-top: 0px;
+    padding: 16px 0px;
+    background-color: white;
+    border: 0px
+   }
