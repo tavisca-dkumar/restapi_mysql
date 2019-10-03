@@ -5,6 +5,8 @@ var StaticTodo='<input type="text" class="search" list="datalist" id ="search" o
 function addingElementToArray(o)
 {
   console.log(o);
+  	if(o=="")
+  		return false;
     if(todo.length==0){
         todo.push(o);
         return true;
@@ -118,6 +120,7 @@ function toDoTable() {
   function addToDo(){
       let text=document.getElementById("search").value;
       let date=getDate();
+      if(addingElementToArray(text))
       postRequest(date,text,counter++);
       //StaticTodo=document.getElementById("main").innerHTML;
     }
